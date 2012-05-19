@@ -66,7 +66,7 @@ package com.hs.components
 		[Bindable]
 		public var amValue:String = "AM";
 		
-		protected var _chainInputs:Boolean = true;
+		protected var _chainInputs:Boolean;
 		
 		[Bindable( "chainInputsChanged" )]
 		public function get chainInputs():Boolean
