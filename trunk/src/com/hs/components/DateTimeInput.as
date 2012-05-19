@@ -402,6 +402,10 @@ package com.hs.components
 							amPm.selectedIndex = 0;
 							incrementDate();
 						}
+						else if( !militaryTime && amPm.selectedIndex == 0 && previousHourSpinnerValue == 11 )
+						{
+							amPm.selectedIndex = 1;
+						}
 						
 						break;
 					
@@ -413,6 +417,10 @@ package com.hs.components
 						{
 							amPm.selectedIndex = 1;
 							decrementDate();
+						}
+						else if( !militaryTime && amPm.selectedIndex == 1 && previousHourSpinnerValue == 12 )
+						{
+							amPm.selectedIndex = 0;
 						}
 						
 						break;
