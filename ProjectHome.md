@@ -1,0 +1,1 @@
+This is a simple date and time input component for flex 4 applications.
